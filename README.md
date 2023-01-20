@@ -1,5 +1,5 @@
 # DT-SNE
-Implementation of the DT-SNE algorithm
+Implementation of the DT-SNE algorithm, as used in the paper: "".
 
 # Build
 Use
