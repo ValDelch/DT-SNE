@@ -14,7 +14,7 @@ from dt_sne import dt_sne
 ```
 
 # Authors
-Adrien Bibal (University of Colorado Anschutz Medical Campus)
+Adrien Bibal (University of Colorado Anschutz Medical Campus) &
 Valentin Delchevalerie (University of Namur)
 
 Parts of the code are inspired by the t-SNE implementation of Laurens van der Maaten (https://lvdmaaten.github.io/tsne/), and a DT implementation of Géraldin Nanfack.
