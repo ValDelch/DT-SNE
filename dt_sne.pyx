@@ -5,7 +5,8 @@
 # cython: profile=False
 
 # This code is implemented based on the code of Laurens van der Maaten and Adrien Bibal
-# for DT-TSNE and based on the code of Géraldin Nanfack & Valentin Delchevalerie for DTs
+# for DT-TSNE and based on the code of Géraldin Nanfack & Valentin Delchevalerie for DTs.
+# Parts of the code using the implementation of Laurens van der Maaten are highlighted.
 # It implements a faster DT-TSNE algorithm using cython
 
 # Libraries & setup
@@ -21,10 +22,12 @@ cdef double EPSILON = np.finfo('double').eps
 ctypedef np.npy_float64 DOUBLE_t
 ctypedef np.npy_intp SIZE_t
 
+
 # Functions
 
 
-
+# Function from the python t-SNE implementation of Laurens van der Maaten without any modification
+# https://lvdmaaten.github.io/tsne/
 def Hbeta(D = np.array([]), beta = 1.0):
     """Compute the perplexity and the P-row for a specific value of the precision of a Gaussian distribution."""
 
@@ -36,7 +39,8 @@ def Hbeta(D = np.array([]), beta = 1.0):
     return H, P
 
 
-
+# Function from the python t-SNE implementation of Laurens van der Maaten without any modification
+# https://lvdmaaten.github.io/tsne/
 def x2p(X = np.array([]), tol = 1e-5, perplexity = 30.0):
     """Performs a binary search to get P-values in such a way that each conditional Gaussian has the same perplexity."""
 
