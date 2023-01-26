@@ -1,5 +1,5 @@
 # DT-SNE
-Implementation of the DT-SNE algorithm, as used in the paper: "DT-SNE: t-SNE Discrete Visualizations as Decision Tree Structures." Neurocomputing (to appear).
+Implementation of the DT-SNE algorithm, as used in the paper: Adrien Bibal, Valentin Delchevalerie and Benoît Frénay. "DT-SNE: t-SNE Discrete Visualizations as Decision Tree Structures." *Neurocomputing* (to appear).
 
 # Build
 Use
